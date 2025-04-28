@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horn Cummunity Care Organization</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <!-- Logo + NGO Name -->
+      <a href="index.html" class="logo">
+        <img src="./Images/newlogo.png" alt="Horn Cummunity Care Organization Logo" width="40">
+        <span>Horn Cummunity Care Organization</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about-org">About Us</a></li>
+           <li class="dropdown"> 
+            <a href="programs.html">Programs <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="programs.html#education">Education</a>
+              <a href="programs.html#healthcare">Healthcare</a>
+              <a href="programs.html#environment">Environment</a>
+            </div>
+          </li>
+          <li><a href="#blog">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <button id="night-mode-toggle" aria-label="Toggle Dark Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <!-- <a href="donate.html" class="btn-donate">Donate Now</a> -->
+        <button class="mobile-menu-toggle" aria-label="Mobile Menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-header">
+          <a href="index.html" class="mobile-logo">
+            <img src="./Images/newlogo.png" alt="Horn Cummunity Care Organization Logo" width="40">
+            <span>Horn Cummunity Care Organization</span>
+          </a>
+          <button class="mobile-menu-close">
+            <span class="close-line"></span>
+            <span class="close-line"></span>
+          </button>
+        </div>
+        
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <!-- <li class="mobile-dropdown"> 
+              <button class="mobile-dropdown-btn">
+                Programs <i class="fas fa-chevron-down"></i>
+              </button>
+              <div class="mobile-dropdown-menu">
+                <a href="programs.html#education">Education</a>
+                <a href="programs.html#healthcare">Healthcare</a>
+                <a href="programs.html#environment">Environment</a>
+              </div>
+            </li>-->
+            <li><a href="#blog">Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="mobile-menu-footer">
+          <!-- <a href="donate.html" class="btn-donate-mobile">Donate Now</a> -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="mobile-menu-overlay"></div>
+  </header>
+
+
+
+  <!-- Modern Hero Section -->
+   <!-- Modern Hero Section -->
+<section class="hero" id="hero">
+    <!-- Dynamic Background -->
+    <div class="hero-bg">
+      <div class="bg-overlay"></div>
+      <div class="particles" id="particles-js"></div>
+    </div>
+  
+    <div class="container">
+      <div class="hero-content">
+        <!-- Text Content -->
+        <div class="hero-text" data-aos="fade-up">
+          <span class="badge">Transforming Lives Since 2010</span>
+          <!-- Updated Hero Headline -->
+  <h1 class="hero-headline">
+    <span class="text-gradient line1">Building Hope,</span>
+    <span class="text-gradient line2 typewriter" data-texts='["Empowering","Creating Change","Transforming "]'></span>
+  </h1>
+          <p class="subtitle">
+            Join <span class="highlight">10,000+</span> changemakers in our mission to provide 
+            <span class="typed" data-typed='["education","healthcare","opportunity"]'></span>
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="cta-group">
+            <a href="donate.html" class="cta-btn primary">
+              <span>Get Our Update</span>
+              <div class="hover-effect"></div>
+            </a>
+            <a href="volunteer.html" class="cta-btn secondary">
+              <span>Join Our Team</span>
+              <div class="hover-effect"></div>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Impact Stats -->
+        <div class="impact-stats">
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-value">
+              <span class="counter" data-target="10000">0</span>+
+            </div>
+            <div class="stat-label">Lives Changed</div>
+            <div class="stat-icon">❤️</div>
+          </div>
+          
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-value">
+              <span class="counter" data-target="250">0</span>+
+            </div>
+            <div class="stat-label">Communities</div>
+            <div class="stat-icon">🌍</div>
+          </div>
+          
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-value">
+              <span class="counter" data-target="85">0</span>+
+            </div>
+            <div class="stat-label">Projects</div>
+            <div class="stat-icon">🏗️</div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Testimonial Carousel -->
+      <div class="testimonial-carousel">
+        <button class="carousel-arrow prev" aria-label="Previous testimonial">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="testimonial-wrapper">
+          <div class="testimonial-card active" data-index="0">
+            <div class="testimonial-content">
+              <div class="avatar">
+                <img src="./Images/bird.jpeg" alt="Sarah K." loading="lazy">
+              </div>
+              <div class="quote">
+                "This organization changed my family's life forever. Eternal gratitude!"
+              </div>
+              <div class="author">- Ayub</div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-index="1">
+            <div class="testimonial-content">
+              <div class="avatar">
+                <img src="./Images/Logo.enc" alt="James L." loading="lazy">
+              </div>
+              <div class="quote">
+                "Most transparent NGO I've worked with. Every dollar makes an impact."
+              </div>
+              <div class="author">- Furqan</div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card" data-index="2">
+            <div class="testimonial-content">
+              <div class="avatar">
+                <img src="./Images/istockphoto-1373659740-1024x1024.jpg" alt="Maria G." loading="lazy">
+              </div>
+              <div class="quote">
+                "The education programs gave my children a future we never thought possible."
+              </div>
+              <div class="author">- Eng. Mahad</div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <button class="carousel-arrow next" aria-label="Next testimonial">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      
+      <!-- Carousel Dots - Now positioned below testimonial -->
+      <div class="carousel-dots-container">
+        <div class="carousel-dots">
+          <button class="dot active" data-index="0" aria-label="Show testimonial 1"></button>
+          <button class="dot" data-index="1" aria-label="Show testimonial 2"></button>
+          <button class="dot" data-index="2" aria-label="Show testimonial 3"></button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="scroller"></div>
+      </div>
+      <span>Scroll to Explore</span>
+    </div>
+  
+    <!-- Quick Donate Button 
+    <div class="quick-donate">
+      <button class="donate-btn pulse">
+        <i class="fas fa-hand-holding-heart"></i>
+        <span>Quick Donate</span>
+      </button>
+      <div class="donate-options">
+        <button data-amount="10">$10</button>
+        <button data-amount="25">$25</button>
+        <button data-amount="50">$50</button>
+        <button data-amount="100">$100</button>
+      </div>
+    </div>-->
+  </section>
+
+
+
+
+  <!-- Modern About Us Section -->
+ <!-- About Us Section -->
+<section class="about-org-section" id="about-org">
+    <!-- Mission/Vision/Values -->
+    <div class="about-container">
+      <div class="about-header about-header-animate" data-aos="fade-up">
+        <h2 class="about-main-title">Our Foundation</h2>
+        <p class="about-subtitle">The pillars that guide our work</p>
+      </div>
+  
+      <div class="about-pillars-grid">
+        <!-- Mission -->
+        <div class="about-pillar about-pillar-mission" data-aos="fade-up" data-aos-delay="100">
+          <div class="pillar-icon-box">
+            <div class="pillar-icon-circle">
+              <i class="fas fa-bullseye pillar-icon"></i>
+            </div>
+          </div>
+          <h3 class="pillar-title">Mission</h3>
+          <p class="pillar-desc">To empower underserved communities through sustainable education, healthcare, and economic development programs.</p>
+          <div class="pillar-wave-anim"></div>
+        </div>
+  
+        <!-- Vision -->
+        <div class="about-pillar about-pillar-vision" data-aos="fade-up" data-aos-delay="200">
+          <div class="pillar-icon-box">
+            <div class="pillar-icon-circle">
+              <i class="fas fa-eye pillar-icon"></i>
+            </div>
+          </div>
+          <h3 class="pillar-title">Vision</h3>
+          <p class="pillar-desc">A world where every individual has access to opportunities that allow them to thrive regardless of circumstances.</p>
+          <div class="pillar-wave-anim"></div>
+        </div>
+  
+        <!-- Values -->
+        <div class="about-pillar about-pillar-values" data-aos="fade-up" data-aos-delay="300">
+          <div class="pillar-icon-box">
+            <div class="pillar-icon-circle">
+              <i class="fas fa-heart pillar-icon"></i>
+            </div>
+          </div>
+          <h3 class="pillar-title">Core Values</h3>
+          <ul class="about-values-list">
+            <li class="value-item">
+              <span class="value-name">Compassion</span>
+              <span class="value-desc">People-first approach</span>
+            </li>
+            <li class="value-item">
+              <span class="value-name">Integrity</span>
+              <span class="value-desc">Transparency in all actions</span>
+            </li>
+            <li class="value-item">
+              <span class="value-name">Innovation</span>
+              <span class="value-desc">Creative solutions</span>
+            </li>
+          </ul>
+          <div class="pillar-wave-anim"></div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- History Timeline -->
+    <div class="about-history-section">
+      <div class="about-container">
+        <div class="about-header about-header-animate" data-aos="fade-up">
+          <h2 class="about-main-title">Our Journey</h2>
+          <p class="about-subtitle">Milestones that shaped our story</p>
+        </div>
+  
+        <div class="about-timeline" data-aos="fade-up">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item timeline-item-even">
+            <div class="timeline-year-box">
+              <div class="timeline-year">2014</div>
+            </div>
+            <div class="timeline-content-box">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="timeline-event">Founded in Nairobi</h4>
+                <p class="timeline-desc">Started with a single community center serving 50 children</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item timeline-item-even">
+            <div class="timeline-year-box">
+              <div class="timeline-year">2018</div>
+            </div>
+            <div class="timeline-content-box">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="timeline-event">10,000 Lives Impacted</h4>
+                <p class="timeline-desc">Started with a single community center serving 50 children</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Timeline Item 3 -->
+          <div class="timeline-item timeline-item-even">
+            <div class="timeline-year-box">
+              <div class="timeline-year">2021</div>
+            </div>
+            <div class="timeline-content-box">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4 class="timeline-event">10,000 Lives Impacted</h4>
+                <p class="timeline-desc">Started with a single community center serving 50 children</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <!-- Team Section -->
+    <div class="about-team-section">
+      <div class="about-container">
+        <div class="about-header about-header-animate" data-aos="fade-up">
+          <h2 class="about-main-title">Meet Our Team</h2>
+          <p class="about-subtitle">The passionate people behind our impact</p>
+        </div>
+  
+        <div class="about-team-grid" id="teamMembersContainer">
+          <!-- Team members will be loaded here -->
+        </div>
+  
+        <div class="about-view-more" data-aos="fade-up">
+          <button class="about-load-btn" id="loadTeamMembers">
+            <span>View Full Team</span>
+            <svg class="about-btn-arrow" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  <!-- Volunteer/Get Involved Section 
+  <section class="volunteer-section" id="get-involved">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2>Join Our Movement</h2>
+        <p class="subtitle">Make a difference in your community</p>
+      </div>
+  
+      <div class="volunteer-grid">
+
+        <div class="volunteer-card form-card" data-aos="fade-up">
+          <div class="card-header">
+            <div class="card-icon">✋</div>
+            <h3>Volunteer With Us</h3>
+          </div>
+          <form class="volunteer-form" id="volunteerForm">
+            <div class="form-group">
+              <input type="text" id="name" name="name" required>
+              <label for="name">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <select id="interest" name="interest" required>
+                <option value=""></option>
+                <option value="teaching">Teaching</option>
+                <option value="healthcare">Healthcare</option>
+                <option value="construction">Construction</option>
+                <option value="events">Event Coordination</option>
+                <option value="other">Other</option>
+              </select>
+              <label for="interest">Area of Interest</label>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" name="message" rows="3" required></textarea>
+              <label for="message">Why do you want to volunteer?</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              <span>Submit Application</span>
+              <div class="loading-spinner"></div>
+            </button>
+          </form>
+        </div>-->
+  
+        <!-- Events Calendar 
+        <div class="volunteer-card calendar-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-header">
+            <div class="card-icon">📅</div>
+            <h3>Upcoming Events</h3>
+          </div>
+          
+
+          <div class="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=engmohamud7@gmail.com" 
+                    style="border: 0" 
+                    width="100%" 
+                    height="400"
+                    frameborder="0" 
+                    scrolling="no"></iframe>
+            
+            <div class="event-highlights">
+              <div class="event-item">
+                <div class="event-date">
+                  <span class="day">15</span>
+                  <span class="month">JUN</span>
+                </div>
+                <div class="event-details">
+                  <h4>Community Health Day</h4>
+                  <p class="event-time">9:00 AM - 3:00 PM</p>
+                  <p class="event-location">Nairobi Community Center</p>
+                </div>
+              </div>
+              
+              <div class="event-item">
+                <div class="event-date">
+                  <span class="day">22</span>
+                  <span class="month">JUN</span>
+                </div>
+                <div class="event-details">
+                  <h4>School Renovation</h4>
+                  <p class="event-time">8:00 AM - 5:00 PM</p>
+                  <p class="event-location">Kibera Primary School</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+  
+        <!-- Partnership Opportunities -->
+        <div class="volunteer-card partnership-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-header">
+            <div class="card-icon">🤝</div>
+            <h3>Partnership Opportunities</h3>
+          </div>
+          
+          <div class="partnership-options">
+            <div class="option-card corporate">
+              <h4>Corporate Partnerships</h4>
+              <ul>
+                <li>Employee volunteer programs</li>
+                <li>Sponsorship opportunities</li>
+                <li>CSR initiatives</li>
+                <li>Skills-based volunteering</li>
+              </ul>
+              <button class="option-btn">Learn More</button>
+            </div>
+            
+            <div class="option-card ngo">
+              <h4>NGO Collaborations</h4>
+              <ul>
+                <li>Joint program implementation</li>
+                <li>Resource sharing</li>
+                <li>Capacity building</li>
+                <li>Advocacy partnerships</li>
+              </ul>
+              <button class="option-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Blog/News Section -->
+<section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Our Latest Updates</h2>
+        <p class="section-subtitle">Success stories, news, and press releases</p>
+      </div>
+  
+      <div class="blog-grid">
+        <!-- Blog Post 1 -->
+        <!-- In your homepage or blog listing -->
+  <div class="blog-card">
+    <img src="./Images/download (3).jpg" alt="Children studying" class="blog-card-img">
+    <div class="blog-card-content">
+      <span class="blog-category">Education</span>
+      <h3><a href="./blogpost.html" class="blog-title">Breaking Barriers: Our 2024 Education Initiative</a></h3>
+      <p class="blog-excerpt">How we're providing quality education to 5,000 children in rural areas...</p>
+      <div class="blog-meta">
+        <span class="blog-date">June 15, 2024</span>
+        <a href="./blogpost.html" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </div>
+  
+        <!-- Blog Post 2 -->
+        <article class="blog-card">
+          <div class="blog-card-image">
+            <img src="./Images/bird.jpeg" alt="Medical Camp" loading="lazy">
+            <span class="blog-category">News Update</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date"><i class="far fa-calendar-alt"></i> May 28, 2023</span>
+              <span class="blog-author"><i class="far fa-user"></i> Najmo Ali</span>
+            </div>
+            <h3 class="blog-title">Mobile Medical Camp Serves 500 Patients</h3>
+            <p class="blog-excerpt">Our recent medical outreach program provided free healthcare services to underserved communities...</p>
+            <a href="blog-post-2.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+  
+        <!-- Blog Post 3 -->
+        <article class="blog-card">
+          <div class="blog-card-image">
+            <img src="./Images/istockphoto-1373659740-1024x1024.jpg" alt="Press Conference" loading="lazy">
+            <span class="blog-category">Press Release</span>
+          </div>
+          <div class="blog-card-content">
+            <div class="blog-meta">
+              <span class="blog-date"><i class="far fa-calendar-alt"></i> April 10, 2023</span>
+              <span class="blog-author"><i class="far fa-user"></i> By Horn Cummunity Care</span>
+            </div>
+            <h3 class="blog-title">Partnership with Green Earth Initiative</h3>
+            <p class="blog-excerpt">We're proud to announce our new environmental partnership to plant 10,000 trees this year...</p>
+            <a href="blog-post-3.html" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </article>
+      </div>
+  
+      <div class="blog-newsletter">
+        <div class="newsletter-container">
+          <div class="newsletter-content">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter for monthly updates on our programs and impact stories.</p>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit" class="btn-subscribe">
+              <span>Subscribe</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="blog-cta">
+        <a href="./all-blogpost.html" class="btn-view-all">View All Updates</a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- contact-section -->
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+      <!-- Contact Info Card -->
+      <div class="contact-card">
+        <div class="contact-header">
+          <img src="./Images/Logo.enc" alt="NGO Logo" class="contact-logo">
+          <h2>Get in Touch</h2>
+          <p>We'd love to hear from you!</p>
+        </div>
+  
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Compassion Street<br>Global City, GC 12345</p>
+          </div>
+          
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+1 (555) 123-4567</p>
+          </div>
+  
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>contact@hopeforall.org</p>
+          </div>
+        </div>
+  
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+  
+      <!-- Contact Form & Map -->
+      <div class="contact-form-map">
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Name" required>
+            <i class="fas fa-user"></i>
+          </div>
+          
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+            <i class="fas fa-envelope"></i>
+          </div>
+          
+          <div class="form-group">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <i class="fas fa-comment-dots"></i>
+          </div>
+  
+          <button type="submit" class="btn-submit">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+  
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40205.14699974488!2d47.42353522483225!3d6.775533607475864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae35e5a5a4d1f7%3A0x5b3d5484a1c6d2c9!2sGalkacyo%2C%20Somalia!5e0!3m2!1sen!2sus!4v1718811148394!5m2!1sen!2sus" 
+            class="google-map"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Live Chat -->
+<div class="live-chat-container">
+    <!-- Chat Toggle Button -->
+    <button class="chat-toggle" aria-label="Open live chat">
+      <i class="fas fa-comment-dots"></i>
+      <span class="chat-badge">1</span>
+    </button>
+  
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+      <div class="chat-header">
+        <h3>How can we help?</h3>
+        <button class="chat-close"><i class="fas fa-times"></i></button>
+      </div>
+      
+      <div class="chat-body" id="chat-messages">
+        <!-- Messages will load here -->
+        <div class="chat-welcome">
+          <p>Hello! We're here to answer your donation questions. Ask us anything!</p>
+          <div class="chat-agent">
+            <img src="./Images/Logo.enc" alt="Support Agent">
+            <span>Dr. Ayub, Support Team</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="chat-footer">
+        <div class="chat-input-container">
+          <input type="text" placeholder="Type your message..." class="chat-input" id="chat-input">
+          <button class="chat-send"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="chat-powered">
+          <span>Powered by </span>
+          <img src="assets/livechat-logo.svg" alt="LiveChat" width="80">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Overlay -->
+  <div class="chat-overlay"></div>
+
+
+  <!-- Trusted donors -->
+<section class="donors-section">
+    <div class="section-header">
+        <h2>Our Trusted Partners</h2>
+    </div>
+    
+    <!-- <div class="donor-carousel-container"> 
+        <button class="carousel-nav prev">
+            <i class="fas fa-chevron-left"></i>-->
+        </button>
+        
+        <div class="donor-carousel">
+            <!-- First Set (Visible) -->
+            <div class="donor-card">
+                <a href="https://www.unicef.org/" target="_blank" rel="noopener" class="donor-card-inner">
+                    <img src="./Images/unicef.svg" alt="Microsoft Logo" class="donor-logo">
+                </a>
+            </div>
+            
+            <div class="donor-card">
+                <a href="https://www.fao.org/home/en" target="_blank" rel="noopener" class="donor-card-inner">
+                    <img src="./Images/foa.jpg" alt="Google Logo" class="donor-logo">
+                </a>
+            </div>
+            
+            <div class="donor-card">
+                <a href="https://www.wfp.org/" target="_blank" rel="noopener" class="donor-card-inner">
+                    <img src="./Images/wfp.png" alt="Apple Logo" class="donor-logo">
+                </a>
+            </div>
+            
+            
+            <!-- Second Set (For Seamless Looping) -->
+            <div class="donor-card">
+                <a href="https://www.unicef.org/" target="_blank" rel="noopener" class="donor-card-inner">
+                    <img src="./Images/unicef.jpg" alt="Microsoft Logo" class="donor-logo">
+                </a>
+            </div>
+            
+            <div class="donor-card">
+                <a href="https://www.fao.org/home/en" target="_blank" rel="noopener" class="donor-card-inner">
+                    <img src="./Images/foa.jpg" alt="Google Logo" class="donor-logo">
+                </a>
+            </div>
+            
+            <div class="donor-card">
+                <a href="https://www.wfp.org/" target="_blank" rel="noopener" class="donor-card-inner">
+                    <img src="./Images/wfp.png" alt="Apple Logo" class="donor-logo">
+                </a>
+            </div>
+        </div>
+        
+        <!-- <button class="carousel-nav next"> 
+            <i class="fas fa-chevron-right"></i>
+        </button>-->
+    </div>
+  </section>
+
+
+   <!-- Footer Section -->
+   <footer class="footer">
+    <div class="footer-container">
+      <!-- Footer Top Section -->
+      <div class="footer-top">
+        <!-- NGO Info Column -->
+        <div class="footer-col footer-about">
+          <a href="index.html" class="footer-logo">
+            <img src="./Images/newlogo.png" alt="Horn Care Cummunity Organization" width="180">
+          </a>
+          <p class="footer-about-text">
+            Horn Care Cummunity Organization is a nonprofit organization dedicated to eradicating poverty through education, healthcare, and sustainable development.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+  
+        <!-- Quick Links Column -->
+        <div class="footer-col">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="programs.html">Our Programs</a></li>
+            <li><a href="stories.html">Success Stories</a></li>
+            <li><a href="blog.html">Latest News</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Programs Column -->
+        <div class="footer-col">
+          <h3 class="footer-title">Our Work</h3>
+          <ul class="footer-links">
+            <li><a href="programs.html#education">Education Initiative</a></li>
+            <li><a href="programs.html#healthcare">Healthcare Access</a></li>
+            <li><a href="programs.html#environment">Environmental Projects</a></li>
+            <li><a href="programs.html#women">Women Empowerment</a></li>
+            <li><a href="programs.html#disaster">Disaster Relief</a></li>
+            <li><a href="volunteer.html">Volunteer Programs</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter Column -->
+        <div class="footer-col footer-newsletter">
+          <h3 class="footer-title">Stay Updated</h3>
+          <p>Subscribe to our newsletter for impact stories and updates</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+          </form>
+          <div class="footer-contact">
+            <p><i class="fas fa-envelope"></i> info@hopecare.org</p>
+            <p><i class="fas fa-phone-alt"></i> +252 906 294 645</p>
+            <p><i class="fas fa-map-marker-alt"></i> Somalia, Puntland State<br>Galkayo, Israac</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2025 Horn Care Cummunity Organization. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <!-- <a href="financials.html">Financial Reports</a> -->
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+
+
+  <script src="./script.js"></script>
+  
+</body>
+</html>
